@@ -1,7 +1,7 @@
-# AI Final Project - Group 9
+# Deep Learning Forecasting & Classification (Keras)
 **Members:** Alan Ray · Zach Shotwell · Miguel Moreno Coin
 
-**Course:** Artificial Intelligence (CS 4440-101), Appalachian State University
+Team project - CS 4440 Artificial Intelligence, Appalachian State University.
 
 Two end-to-end deep learning pipelines submitted as the final project: bias correction of streamflow forecasts, and building damage classification from UAV aerial imagery. The repository contains both notebooks, the paired papers each project replicates, and the data needed to reproduce the headline results from a clean Colab runtime.
 
