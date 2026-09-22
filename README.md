@@ -11,7 +11,7 @@ A deep learning post-processor for NOAA National Water Model (NWM) short-range r
 
 The two stations behave very differently. At USGS 11266500 (San Joaquin River, CA; NHD reach 21609641), where NWM is already well-calibrated, the GRU halves test RMSE at lead = 1 h (1.73 → 0.86 cms) and tracks the 100+ cms atmospheric river peaks of December 2022 / January 2023 with R² = 0.998 - even though no comparable peaks are present in the validation period. At USGS 09520500 (lower Gila River near Dome, AZ; reach 20380357), NWM overforecasts by roughly 16× because the gauge sits below Painted Rock Dam and the Ashurst–Hayden irrigation diversion, neither of which is represented in NWM's natural-flow simulation. The post-processor cleanly removes the mean bias and cuts RMSE roughly in half, but Pearson CC stays near zero: there is no dynamic skill to recover when the input forecast and the observed flow are physically decoupled by upstream regulation.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zachshotwell/AI-FinalProject-GroupSCR/blob/main/RunoffForecastingProject/RunoffForecasting.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rayar93/dl-forecasting-classification-keras/blob/main/RunoffForecastingProject/RunoffForecasting.ipynb)
 
 ## DoriaNET
 
@@ -21,4 +21,4 @@ The split is building-stratified: all frame appearances of a given physical buil
 
 The MLP and from-scratch CNN both collapse to majority-class prediction (31.1% test accuracy, equal to the class-3 share in the test set) - a clean reproduction of the data-scarcity regime that motivates transfer learning, given only ~960 training instances spread across six ordinal classes. The modernized v2 variants partially break the collapse but do not beat the majority baseline on exact accuracy. MobileNetV2 reaches 34% exact / 67% ±1-class accuracy. MobileNetV1 wins outright at 47% exact / 82% ±1-class accuracy, leveraging ImageNet-pretrained features under the same two-step fine-tune recipe Cheng et al. published. An end-to-end pipeline couples a YOLO11n building detector to MobileNetV1, evaluating the full frame-in / damage-out flow on held-out test frames.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zachshotwell/AI-FinalProject-GroupSCR/blob/main/DoriaNETProject/DoriaNET.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rayar93/dl-forecasting-classification-keras/blob/main/DoriaNETProject/DoriaNET.ipynb)
