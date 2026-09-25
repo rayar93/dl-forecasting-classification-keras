@@ -22,3 +22,8 @@ The split is building-stratified: all frame appearances of a given physical buil
 The MLP and from-scratch CNN both collapse to majority-class prediction (31.1% test accuracy, equal to the class-3 share in the test set) - a clean reproduction of the data-scarcity regime that motivates transfer learning, given only ~960 training instances spread across six ordinal classes. The modernized v2 variants partially break the collapse but do not beat the majority baseline on exact accuracy. MobileNetV2 reaches 34% exact / 67% ±1-class accuracy. MobileNetV1 wins outright at 47% exact / 82% ±1-class accuracy, leveraging ImageNet-pretrained features under the same two-step fine-tune recipe Cheng et al. published. An end-to-end pipeline couples a YOLO11n building detector to MobileNetV1, evaluating the full frame-in / damage-out flow on held-out test frames.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rayar93/dl-forecasting-classification-keras/blob/main/DoriaNETProject/DoriaNET.ipynb)
+
+## Report and presentation
+
+- **Report:** [reports/report.pdf](reports/report.pdf) - the three-page final project write-up covering both pipelines
+- **Presentation:** [reports/presentation.pdf](reports/presentation.pdf) - the final project slides
