@@ -1,4 +1,7 @@
 # Deep Learning Forecasting & Classification (Keras)
+
+**Try it:** Run [Runoff Forecasting](https://colab.research.google.com/github/rayar93/dl-forecasting-classification-keras/blob/main/RunoffForecastingProject/RunoffForecasting.ipynb) or [DoriaNET](https://colab.research.google.com/github/rayar93/dl-forecasting-classification-keras/blob/main/DoriaNETProject/DoriaNET.ipynb) in Google Colab - nothing to install, needs a free Google account.
+
 **Members:** Alan Ray · Zach Shotwell · Miguel Moreno Coin
 
 Team project - CS 4440 Artificial Intelligence, Appalachian State University.
